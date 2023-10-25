@@ -1,0 +1,21 @@
+html{
+    background-color: yellow;
+}
+.tabela{
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+}
+.tabela thead tr {
+    border: 2px solid;
+    background-color: gray;
+    min-width: 150px;
+    font-weight: bolder;
+}
+.tabela th,
+.tabela td{
+    border: 2px solid;
+    padding: 12px 15px;
+    min-width: 150px;
+}

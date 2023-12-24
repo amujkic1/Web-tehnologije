@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var trigger = $('#nav a'),
+                container = $('#content2');
+
+            trigger.on('click', function(event){
+                event.preventDefault(); // Prevent default behavior of the anchor tag
+
+                var $this = $(this),
+                    target = $this.data('target');
+                container.load(target);
+
+                if(userIsLoggedIn){
+                    console.log('loooooooooooooooooooooooooooooooooooooooog');
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    
+    <nav id="nav">
+        <a href="#" data-target="stranica1.html">Stranica 1</a>
+        <a href="#" data-target="stranica2.html">Stranica 2</a>
+        <a href="#" data-target="stranica3.html">Stranica 3</a>
+        <a href="#" data-target="stranica1.html">Logout</a>
+
+    </nav>
+
+    <div id="content2"></div>
+
+</body>
+</html>

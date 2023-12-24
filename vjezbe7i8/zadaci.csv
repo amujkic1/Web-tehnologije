@@ -1,0 +1,4 @@
+id, naziv, opis
+1, "Prijava korisnika", "Implementirati prijavu korisnika"
+2, "Optimizirati bazu podataka", "Izvršiti optimizaciju baze podataka kako bi se smanjilo vrijeme odziva upita"
+3, "Napraviti prezentaciju projekta", "Napraviti prezentaciju koja će obuhvatiti ključne aspekte projekta za prezentaciju klijentima"
